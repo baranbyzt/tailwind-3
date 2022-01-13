@@ -17,6 +17,9 @@ html body{
 #item_2{
     display: none;
 }
+body{
+    background-color: #e9e8e6;
+}
 @media screen and (max-width: 1100px) {
     .menu_responsive{
         display: flex;
@@ -29,7 +32,6 @@ html body{
 /* extra section with vanilya css end */
 
 @layer components {
-
 
     /* menu section stat */
     .menu_wrapper{
@@ -110,6 +112,32 @@ p{
     mt-40 flex justify-center items-center text-center;
 }
   /* works section ending  */
+
+  /* contact section stating  */
+.contact_wrapper{
+    @apply  
+    container mx-auto  mt-40
+    grid grid-cols-1 lg:grid-cols-2 p-5
+    ;
+}
+.email_section{
+@apply   
+pr-10
+;
+}
+.address_section{
+@apply p-10 lg:px-40;
+}
+.word_wrapper{
+    @apply  
+w-full  absolute bottom-0
+    ;
+}
+.bottom_word{
+    @apply text-center text-2xl font-normal   
+    bottom-10 mx-auto;
+}
+  /* contact section ending  */
 }
 
 

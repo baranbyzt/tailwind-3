@@ -813,6 +813,90 @@ p {
 
 /* works section ending  */
 
+/* contact section stating  */
+
+.contact_wrapper {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .contact_wrapper {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact_wrapper {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact_wrapper {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact_wrapper {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .contact_wrapper {
+    max-width: 1536px;
+  }
+}
+
+.contact_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .contact_wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.email_section {
+  padding-right: 2.5rem;
+}
+
+.address_section {
+  padding: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .address_section {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+.word_wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.bottom_word {
+  bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+/* contact section ending  */
+
 .static {
   position: static;
 }
@@ -831,6 +915,14 @@ p {
 
 .right-10 {
   right: 2.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
 }
 
 .z-10 {
@@ -939,6 +1031,14 @@ p {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -952,6 +1052,14 @@ p {
   padding-bottom: 1.25rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -960,6 +1068,11 @@ p {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-normal {
@@ -993,6 +1106,10 @@ html body{
 
 #item_2{
   display: none;
+}
+
+body{
+  background-color: #e9e8e6;
 }
 
 @media screen and (max-width: 1100px) {
