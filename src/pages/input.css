@@ -2,4 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
+/* extra section with vanilya css start */
+html body{
+    width: 100%;
+    height: 100%;
+    display: relative;
+}
+.menu_responsive{
+    display: none
+}
+#responsive_child_menu{
+    display: none;
+}
+#item_2{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .menu_responsive{
+        display: flex;
+    }
+    .manu_ul{
+        display: none
+    }
+
+  }
+/* extra section with vanilya css end */
+
+@layer components {
+
+
+    /* menu section stat */
+    .menu_wrapper{
+        @apply  z-10 top-0 flex justify-center items-center
+        absolute w-full h-[90px];
+    }
+.menu_title{
+@apply  w-40 absolute  m-5 ml-auto mt-10;
+}
+.manu_ul{
+    @apply absolute left-5 float-left  flex ;
+}
+.menu_li{
+    @apply m-3 font-normal text-lg text-black hover:text-gray-900;
+}
+.menu_responsive{
+@apply absolute right-10 text-4xl  ;
+}
+.menu_responsive i {
+    @apply  w-full h-full cursor-pointer;
+}
+
+#responsive_child_menu{
+@apply z-0 bg-slate-300  absolute w-full 
+  h-screen flex justify-center items-center ;
+}
+.child_menu_li{
+@apply  m-5 hover:text-gray-900;
+}
+  /* menu section end */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
