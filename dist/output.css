@@ -692,6 +692,73 @@ p {
 
 /*  studio section starting  */
 
+.studio_section_2 {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .studio_section_2 {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .studio_section_2 {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .studio_section_2 {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .studio_section_2 {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .studio_section_2 {
+    max-width: 1536px;
+  }
+}
+
+.studio_section_2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 10rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .studio_section_2 {
+    width: 40%;
+  }
+}
+
+.studio_p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* studio section ending  */
+
+/* works section starting  */
+
+.swiper-container {
+  margin-bottom: 1.25rem;
+  width: 100%;
+  padding-bottom: 1.25rem;
+}
+
 .studio_section_1 {
   width: 100%;
 }
@@ -744,13 +811,7 @@ p {
   }
 }
 
-.swiper-container {
-  margin-bottom: 1.25rem;
-  width: 100%;
-  padding-bottom: 1.25rem;
-}
-
-/* studio section ending  */
+/* works section ending  */
 
 .static {
   position: static;
@@ -953,6 +1014,10 @@ html body{
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 
   .lg\:grid-cols-2 {

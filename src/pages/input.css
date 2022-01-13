@@ -90,14 +90,26 @@ p{
   /* index main content end */
 
   /*  studio section starting  */
+
+.studio_section_2 {
+    @apply container mx-auto w-full lg:w-2/5    mb-10
+    mt-40 flex flex-wrap justify-center items-center ;
+}
+
+.studio_p{
+    @apply  px-2;
+}
+  /* studio section ending  */
+
+  /* works section starting  */
+.swiper-container{
+    @apply w-full pb-5 mb-5 ;
+}
 .studio_section_1{
     @apply container mx-auto w-full lg:w-1/2    mb-10
     mt-40 flex justify-center items-center text-center;
 }
-.swiper-container{
-    @apply w-full pb-5 mb-5 ;
-}
-  /* studio section ending  */
+  /* works section ending  */
 }
 
 
