@@ -33,7 +33,7 @@ html body{
 
     /* menu section stat */
     .menu_wrapper{
-        @apply  z-10 top-0 flex justify-center items-center 
+        @apply  z-10 top-0 flex justify-center items-center absolute
         lg:fixed w-full h-[90px];
     }
 .menu_title{
@@ -79,13 +79,13 @@ html body{
     ;
 }
 p{
-    @apply py-4 leading-loose;
+    @apply py-4 leading-loose text-lg;
 }
 .inter_img{
     @apply my-4;
 }
 .signature{
-    @apply ml-80 w-1/3;
+    @apply ml-80 w-1/3 p-5;
 }
   /* index main content end */
 }

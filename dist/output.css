@@ -505,6 +505,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* menu section stat */
 
 .menu_wrapper {
+  position: absolute;
   top: 0px;
   z-index: 10;
   display: flex;
@@ -671,6 +672,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 p {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   line-height: 2;
 }
 
@@ -682,6 +685,7 @@ p {
 .signature {
   margin-left: 20rem;
   width: 33.333333%;
+  padding: 1.25rem;
 }
 
 /* index main content end */
@@ -771,6 +775,10 @@ p {
   width: 66.666667%;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -817,6 +825,10 @@ p {
 
 .font-normal {
   font-weight: 400;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .text-black {
