@@ -33,8 +33,8 @@ html body{
 
     /* menu section stat */
     .menu_wrapper{
-        @apply  z-10 top-0 flex justify-center items-center
-        absolute w-full h-[90px];
+        @apply  z-10 top-0 flex justify-center items-center 
+        lg:fixed w-full h-[90px];
     }
 .menu_title{
 @apply  w-40 absolute  m-5 ml-auto mt-10;
@@ -60,6 +60,34 @@ html body{
 @apply  m-5 hover:text-gray-900;
 }
   /* menu section end */
+
+  /* index main content start */
+.index_main_content{
+    @apply w-full h-full  overflow-hidden grid grid-cols-1 lg:grid-cols-2
+    ;
+}
+.index_item1{
+@apply overflow-hidden static  float-left;
+}
+.index_item1 img{
+    @apply w-full h-screen lg:w-1/2 lg:fixed
+    ;
+}
+.index_item2{
+    @apply  container mx-auto  w-4/6 pt-40 float-right
+    flex justify-center items-center flex-wrap
+    ;
+}
+p{
+    @apply py-4 leading-loose;
+}
+.inter_img{
+    @apply my-4;
+}
+.signature{
+    @apply ml-80 w-1/3;
+}
+  /* index main content end */
 }
 
 

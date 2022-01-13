@@ -468,10 +468,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 /* menu section stat */
 
 .menu_wrapper {
-  position: absolute;
   top: 0px;
   z-index: 10;
   display: flex;
@@ -479,6 +512,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .menu_wrapper {
+    position: fixed;
+  }
 }
 
 .menu_title {
@@ -546,6 +585,111 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* menu section end */
 
+/* index main content start */
+
+.index_main_content {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .index_main_content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.index_item1 {
+  position: static;
+  float: left;
+  overflow: hidden;
+}
+
+.index_item1 img {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .index_item1 img {
+    position: fixed;
+  }
+
+  .index_item1 img {
+    width: 50%;
+  }
+}
+
+.index_item2 {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .index_item2 {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .index_item2 {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .index_item2 {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .index_item2 {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .index_item2 {
+    max-width: 1536px;
+  }
+}
+
+.index_item2 {
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 66.666667%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+}
+
+.inter_img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signature {
+  margin-left: 20rem;
+  width: 33.333333%;
+}
+
+/* index main content end */
+
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -570,6 +714,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
 }
@@ -582,12 +730,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.75rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
+.ml-80 {
+  margin-left: 20rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-full {
@@ -606,6 +767,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -614,9 +787,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-lg {
@@ -669,6 +855,20 @@ html body{
 }
 
 /* extra section with vanilya css end */
+
+@media (min-width: 1024px) {
+  .lg\:fixed {
+    position: fixed;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
 
