@@ -55,7 +55,7 @@ body{
 }
 
 #responsive_child_menu{
-@apply z-0 bg-slate-300  absolute w-full 
+@apply z-10 bg-slate-300  absolute w-full 
   h-screen flex justify-center items-center ;
 }
 .child_menu_li{
@@ -116,7 +116,7 @@ p{
   /* contact section stating  */
 .contact_wrapper{
     @apply  
-    container mx-auto  mt-40
+    container mx-auto  lg:mt-80 mt-40
     grid grid-cols-1 lg:grid-cols-2 p-5
     ;
 }
@@ -134,7 +134,7 @@ w-full  absolute bottom-0
     ;
 }
 .bottom_word{
-    @apply text-center text-2xl font-normal   
+    @apply text-center text-2xl font-normal 
     bottom-10 mx-auto;
 }
   /* contact section ending  */
